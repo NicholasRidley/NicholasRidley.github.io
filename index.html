@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login</title>
+<meta charset="UTF-8">
+
+
+
+
+
+<script type="text/javascript">
+// PASSWORD PROTECTION SCRIPT
+
+function TheLogin() {
+
+var password_1 = 'Seth is a friend of Nick';
+
+if (this.document.login.pass.value == password_1) {
+  top.location.href="seth.html";
+}
+
+var password_2 = 'Drew is a friend of Nick';
+
+if (this.document.login.pass.value == password_2) {
+  top.location.href="drew.html";
+}
+else {
+  window.alert("Incorrect password, 1 attempt remaining.");
+  }
+}
+
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+<br><br><br><br>
+
+
+
+
+
+<div style="text-align: center; margin: 0 auto; color: #0000FF; font: normal 13px arial, sans-serif;">
+Enter your password:<br>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+<input type="text" name="pass" size="17" onkeydown="if(event.keyCode==13) return false;" style="width: 130px;"><br>
+<input type="button" value="Login" style="width: 134px; margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+</form>
+
+Password = Seth is a friend of Nick
+
+</div>
+
+
+
+
+
+<br><br><br>
+
+</body>
+</html>
