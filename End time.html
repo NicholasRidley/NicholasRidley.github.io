@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -17,7 +18,7 @@ p {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 28, 2020 18:58:00").getTime();
+var countDownDate = new Date("June 29, 2020 11:21:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -39,9 +40,8 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+  if (distance < 0)  {
+	top.location.href="video.html";	
   }
 }, 1000);
 </script>
